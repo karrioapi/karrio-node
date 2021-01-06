@@ -1,0 +1,91 @@
+# Purplship Node.js Library
+
+Purplship is a Multi-carrier Shipping API that simplifies the integration of logistic carrier services.
+
+Visit [purplship.com](https://purplship.com) to deploy your private cloud multi-carrier shipping API.
+
+## Documentation
+
+See the full [API docs](https://docs.purplship.com/#/guide).
+
+## Installation
+
+Install using [npm](https://www.npmjs.com/package/npm) or [yarn](https://yarnpkg.com/)
+
+```bash
+npm i purplship
+# or 
+yarn add purplship
+```
+
+## Usage
+
+The package needs to be configured with your account's API key, which is available in the Purplship Dashboard.
+
+```javascript
+const Purplship = require('purplship');
+const purplship = new Purplship('API_KEY', 'https://instance.purplship.api/v1');
+
+purplship.carriers.list()
+    .then(carriers => console.log(carriers))
+    .catch(error => console.error(error));
+```
+
+Or using ES modules and `async`/`await`:
+
+```javascript
+import Purplship from 'purplship';
+const purplship = new Purplship('API_KEY', 'https://instance.purplship.api/v1');
+
+(async () => {
+  const carriers = await purplship.carriers.list();
+
+  console.log(carriers);
+})();
+```
+
+## Documentation for Models
+
+- [Address](docs/Address.md)
+- [AddressData](docs/AddressData.md)
+- [Card](docs/Card.md)
+- [CarrierSettings](docs/CarrierSettings.md)
+- [Charge](docs/Charge.md)
+- [Commodity](docs/Commodity.md)
+- [Customs](docs/Customs.md)
+- [CustomsData](docs/CustomsData.md)
+- [Doc](docs/Doc.md)
+- [ErrorResponse](docs/ErrorResponse.md)
+- [LabelPrintingRequest](docs/LabelPrintingRequest.md)
+- [Message](docs/Message.md)
+- [Operation](docs/Operation.md)
+- [OperationConfirmation](docs/OperationConfirmation.md)
+- [OperationResponse](docs/OperationResponse.md)
+- [Parcel](docs/Parcel.md)
+- [ParcelData](docs/ParcelData.md)
+- [Payment](docs/Payment.md)
+- [PaymentData](docs/PaymentData.md)
+- [Pickup](docs/Pickup.md)
+- [PickupCancelData](docs/PickupCancelData.md)
+- [PickupCancelRequest](docs/PickupCancelRequest.md)
+- [PickupData](docs/PickupData.md)
+- [PickupRequest](docs/PickupRequest.md)
+- [PickupResponse](docs/PickupResponse.md)
+- [PickupUpdateData](docs/PickupUpdateData.md)
+- [PickupUpdateRequest](docs/PickupUpdateRequest.md)
+- [Rate](docs/Rate.md)
+- [RateRequest](docs/RateRequest.md)
+- [RateResponse](docs/RateResponse.md)
+- [References](docs/References.md)
+- [Shipment](docs/Shipment.md)
+- [ShipmentCancelRequest](docs/ShipmentCancelRequest.md)
+- [ShipmentData](docs/ShipmentData.md)
+- [ShipmentPurchaseData](docs/ShipmentPurchaseData.md)
+- [ShippingRequest](docs/ShippingRequest.md)
+- [TrackingEvent](docs/TrackingEvent.md)
+- [TrackingResponse](docs/TrackingResponse.md)
+- [TrackingStatus](docs/TrackingStatus.md)
+
+## Author
+
+PurplShip Team | hello@purplship.com | [purplship.com](https://purplship.com)
