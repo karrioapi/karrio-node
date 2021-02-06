@@ -1,4 +1,4 @@
-# CustomsData
+# PurplshipOpenSourceMultiCarrierShippingApi.CustomsData
 
 ## Properties
 Name | Type | Description | Notes

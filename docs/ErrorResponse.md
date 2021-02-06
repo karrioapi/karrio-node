@@ -1,4 +1,4 @@
-# ErrorResponse
+# PurplshipOpenSourceMultiCarrierShippingApi.ErrorResponse
 
 ## Properties
 Name | Type | Description | Notes

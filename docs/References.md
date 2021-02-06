@@ -1,4 +1,4 @@
-# References
+# PurplshipOpenSourceMultiCarrierShippingApi.References
 
 ## Properties
 Name | Type | Description | Notes

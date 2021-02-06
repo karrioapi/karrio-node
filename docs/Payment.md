@@ -1,4 +1,4 @@
-# Payment
+# PurplshipOpenSourceMultiCarrierShippingApi.Payment
 
 ## Properties
 Name | Type | Description | Notes
@@ -8,7 +8,6 @@ Name | Type | Description | Notes
 **amount** | **Number** | The payment amount if known | [optional] 
 **currency** | **String** | The payment amount currency | 
 **account_number** | **String** | The selected rate carrier payer account number | [optional] 
-**credit_card** | [**Card**](Card.md) |  | [optional] 
 **contact** | [**Address**](Address.md) |  | [optional] 
 
 <a name="PaidByEnum"></a>
@@ -17,7 +16,6 @@ Name | Type | Description | Notes
 * `sender` (value: `"sender"`)
 * `recipient` (value: `"recipient"`)
 * `third_party` (value: `"third_party"`)
-* `credit_card` (value: `"credit_card"`)
 
 
 <a name="CurrencyEnum"></a>

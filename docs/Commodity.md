@@ -1,4 +1,4 @@
-# Commodity
+# PurplshipOpenSourceMultiCarrierShippingApi.Commodity
 
 ## Properties
 Name | Type | Description | Notes

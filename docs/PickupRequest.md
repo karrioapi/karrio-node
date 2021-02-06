@@ -1,4 +1,4 @@
-# PickupRequest
+# PurplshipOpenSourceMultiCarrierShippingApi.PickupRequest
 
 ## Properties
 Name | Type | Description | Notes

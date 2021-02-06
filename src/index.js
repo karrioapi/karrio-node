@@ -54,9 +54,8 @@ class Purplship {
         this.customs = new Proxy(new API.CustomsApi(), proxyHandler);
         this.parcels = new Proxy(new API.ParcelsApi(), proxyHandler);
         this.pickups = new Proxy(new API.PickupsApi(), proxyHandler);
-        this.rates = new Proxy(new API.RatesApi(), proxyHandler);
+        this.proxy = new Proxy(new API.ProxyApi(), proxyHandler);
         this.shipments = new Proxy(new API.ShipmentsApi(), proxyHandler);
-        this.shipping = new Proxy(new API.ShippingApi(), proxyHandler);
         this.tracking = new Proxy(new API.TrackingApi(), proxyHandler);
         this.utils = new Proxy(new API.UtilsApi(), proxyHandler);
     }

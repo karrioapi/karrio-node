@@ -1,4 +1,4 @@
-# TrackingEvent
+# PurplshipOpenSourceMultiCarrierShippingApi.TrackingEvent
 
 ## Properties
 Name | Type | Description | Notes

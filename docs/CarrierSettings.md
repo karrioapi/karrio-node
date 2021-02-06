@@ -1,4 +1,4 @@
-# CarrierSettings
+# PurplshipOpenSourceMultiCarrierShippingApi.CarrierSettings
 
 ## Properties
 Name | Type | Description | Notes

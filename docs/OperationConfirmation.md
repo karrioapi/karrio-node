@@ -1,4 +1,4 @@
-# OperationConfirmation
+# PurplshipOpenSourceMultiCarrierShippingApi.OperationConfirmation
 
 ## Properties
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# ShipmentPurchaseData
+# PurplshipOpenSourceMultiCarrierShippingApi.ShipmentPurchaseData
 
 ## Properties
 Name | Type | Description | Notes

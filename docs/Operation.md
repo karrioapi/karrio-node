@@ -1,4 +1,4 @@
-# Operation
+# PurplshipOpenSourceMultiCarrierShippingApi.Operation
 
 ## Properties
 Name | Type | Description | Notes

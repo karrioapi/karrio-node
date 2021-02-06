@@ -1,4 +1,4 @@
-# Message
+# PurplshipOpenSourceMultiCarrierShippingApi.Message
 
 ## Properties
 Name | Type | Description | Notes

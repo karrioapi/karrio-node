@@ -6,7 +6,7 @@ Visit [purplship.com](https://purplship.com) to deploy your private cloud multi-
 
 ## Documentation
 
-See the full [API docs](https://docs.purplship.com/#/guide).
+See the full [Node API docs](https://docs.purplship.com/#/v2020.12/guides/reference?id=reference).
 
 ## Installation
 
@@ -48,13 +48,11 @@ const purplship = new Purplship('API_KEY', 'https://instance.purplship.api/v1');
 
 - [Address](docs/Address.md)
 - [AddressData](docs/AddressData.md)
-- [Card](docs/Card.md)
 - [CarrierSettings](docs/CarrierSettings.md)
 - [Charge](docs/Charge.md)
 - [Commodity](docs/Commodity.md)
 - [Customs](docs/Customs.md)
 - [CustomsData](docs/CustomsData.md)
-- [Doc](docs/Doc.md)
 - [ErrorResponse](docs/ErrorResponse.md)
 - [LabelPrintingRequest](docs/LabelPrintingRequest.md)
 - [Message](docs/Message.md)
