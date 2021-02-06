@@ -1,4 +1,4 @@
-# AddressData
+# PurplshipOpenSourceMultiCarrierShippingApi.AddressData
 
 ## Properties
 Name | Type | Description | Notes
@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 **state_code** | **String** | The address state code | [optional] 
 **suburb** | **String** | The address suburb if known | [optional] 
 **residential** | **Boolean** | Indicate if the address is residential or commercial (enterprise) | [optional] [default to false]
-**address_line1** | **String** |  The address line with street number  **(required for shipment purchase)**  | [optional] 
+**address_line1** | **String** |  The address line with street number &lt;br/&gt; **(required for shipment purchase)**  | [optional] 
 **address_line2** | **String** | The address line with suite number | [optional] 
 
 <a name="CountryCodeEnum"></a>

@@ -1,4 +1,4 @@
-# TrackingResponse
+# PurplshipOpenSourceMultiCarrierShippingApi.TrackingResponse
 
 ## Properties
 Name | Type | Description | Notes

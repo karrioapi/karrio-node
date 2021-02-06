@@ -1,4 +1,4 @@
-# LabelPrintingRequest
+# PurplshipOpenSourceMultiCarrierShippingApi.LabelPrintingRequest
 
 ## Properties
 Name | Type | Description | Notes

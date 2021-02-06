@@ -2078,6 +2078,18 @@ process-nextick-args@~2.0.0:
   resolved "https://registry.yarnpkg.com/process-nextick-args/-/process-nextick-args-2.0.1.tgz#7820d9b16120cc55ca9ae7792680ae7dba6d7fe2"
   integrity sha512-3ouUOpQhtgrbOa17J7+uxOTpITYWaGP7/AhoR3+A+/1e9skrzelGi/dXzEYyvbxubEF6Wn2ypscTKiKJFFn1ag==
 
+"purplship@file:.":
+  version "2021.0.0"
+  dependencies:
+    purplship "file:../../../Library/Caches/Yarn/v6/npm-purplship-2021.0.0-bf9e60aa-62b1-4cbd-8b1a-f3d4c74c3b63-1612576417504/node_modules/purplship"
+    superagent "3.7.0"
+
+"purplship@file:./":
+  version "2021.0.0"
+  dependencies:
+    purplship "file:../../../Library/Caches/Yarn/v6/npm-purplship-2021.0.0-fa20928a-0267-465c-a87f-5de2cd44ae4b-1612576417606/node_modules/purplship"
+    superagent "3.7.0"
+
 qs@^6.5.1:
   version "6.9.4"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.9.4.tgz#9090b290d1f91728d3c22e54843ca44aea5ab687"

@@ -1,4 +1,4 @@
-# PickupCancelRequest
+# PurplshipOpenSourceMultiCarrierShippingApi.PickupCancelRequest
 
 ## Properties
 Name | Type | Description | Notes

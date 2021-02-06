@@ -1,4 +1,4 @@
-# TrackingStatus
+# PurplshipOpenSourceMultiCarrierShippingApi.TrackingStatus
 
 ## Properties
 Name | Type | Description | Notes

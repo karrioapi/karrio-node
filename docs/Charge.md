@@ -1,4 +1,4 @@
-# Charge
+# PurplshipOpenSourceMultiCarrierShippingApi.Charge
 
 ## Properties
 Name | Type | Description | Notes

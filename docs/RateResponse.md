@@ -1,4 +1,4 @@
-# RateResponse
+# PurplshipOpenSourceMultiCarrierShippingApi.RateResponse
 
 ## Properties
 Name | Type | Description | Notes

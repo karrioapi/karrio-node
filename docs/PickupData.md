@@ -1,4 +1,4 @@
-# PickupData
+# PurplshipOpenSourceMultiCarrierShippingApi.PickupData
 
 ## Properties
 Name | Type | Description | Notes
