@@ -8,4 +8,5 @@ Name | Type | Description | Notes
 **carrier_id** | **String** | The tracking carrier configured identifier | 
 **tracking_number** | **String** | The shipment tracking number | 
 **events** | [**[TrackingEvent]**](TrackingEvent.md) | The tracking details events | [optional] 
-**test_mode** | **Boolean** | Specified whether it was created with a carrier in test mode | 
+**delivered** | **Boolean** | Specified whether the related shipment was delivered | [optional] 
+**test_mode** | **Boolean** | Specified whether the object was created with a carrier in test mode | 

@@ -35,6 +35,7 @@ Name | Type | Description | Notes
 
 * `created` (value: `"created"`)
 * `purchased` (value: `"purchased"`)
+* `shipped` (value: `"shipped"`)
 * `transit` (value: `"transit"`)
 * `delivered` (value: `"delivered"`)
 
