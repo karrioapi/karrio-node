@@ -12,11 +12,22 @@ Name | Type | Description | Notes
 <a name="CarrierNameEnum"></a>
 ## Enum: CarrierNameEnum
 
+* `aramex` (value: `"aramex"`)
+* `australiapost` (value: `"australiapost"`)
 * `canadapost` (value: `"canadapost"`)
+* `canpar` (value: `"canpar"`)
 * `dhl_express` (value: `"dhl_express"`)
+* `dhl_universal` (value: `"dhl_universal"`)
+* `dicom` (value: `"dicom"`)
 * `fedex_express` (value: `"fedex_express"`)
 * `purolator_courier` (value: `"purolator_courier"`)
+* `royalmail` (value: `"royalmail"`)
+* `sendle` (value: `"sendle"`)
+* `sf_express` (value: `"sf_express"`)
 * `ups_package` (value: `"ups_package"`)
-* `eshipper` (value: `"eshipper"`)
+* `usps` (value: `"usps"`)
+* `yanwen` (value: `"yanwen"`)
+* `yunexpress` (value: `"yunexpress"`)
 * `freightcom` (value: `"freightcom"`)
+* `eshipper` (value: `"eshipper"`)
 

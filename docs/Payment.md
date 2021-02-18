@@ -4,7 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **String** | A unique identifier | [optional] 
-**paid_by** | **String** | The payment payer | 
+**paid_by** | **String** | The payment payer | [optional] [default to &#x27;sender&#x27;]
 **amount** | **Number** | The payment amount if known | [optional] 
 **currency** | **String** | The payment amount currency | 
 **account_number** | **String** | The selected rate carrier payer account number | [optional] 
