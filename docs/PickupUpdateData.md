@@ -1,6 +1,7 @@
-# PurplshipOpenSourceMultiCarrierShippingApi.PickupUpdateData
+# PurplshipApi.PickupUpdateData
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **pickup_date** | **String** |  The expected pickup date  Date Format: YYYY-MM-DD  | [optional] 
@@ -12,3 +13,5 @@ Name | Type | Description | Notes
 **options** | **Object** | Advanced carrier specific pickup options | [optional] 
 **tracking_numbers** | **[String]** | The list of shipments to be picked up | [optional] 
 **confirmation_number** | **String** | pickup identification number | 
+
+

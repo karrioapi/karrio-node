@@ -1,6 +1,7 @@
-# PurplshipOpenSourceMultiCarrierShippingApi.TrackingStatus
+# PurplshipApi.TrackingStatus
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **String** | A unique identifier | [optional] 
@@ -10,3 +11,5 @@ Name | Type | Description | Notes
 **events** | [**[TrackingEvent]**](TrackingEvent.md) | The tracking details events | [optional] 
 **delivered** | **Boolean** | Specified whether the related shipment was delivered | [optional] 
 **test_mode** | **Boolean** | Specified whether the object was created with a carrier in test mode | 
+
+

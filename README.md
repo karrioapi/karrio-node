@@ -6,7 +6,7 @@ Visit [purplship.com](https://purplship.com) to deploy your private cloud multi-
 
 ## Documentation
 
-See the full [Node API docs](https://docs.purplship.com/#/v2020.12/guides/reference?id=reference).
+See the full [Node API docs](https://docs.purplship.com).
 
 ## Installation
 
@@ -46,18 +46,21 @@ const purplship = new Purplship('API_KEY', 'https://instance.purplship.api/v1');
 
 ## Documentation for Models
 
+- [AccessToken](docs/AccessToken.md)
 - [Address](docs/Address.md)
 - [AddressData](docs/AddressData.md)
 - [AddressList](docs/AddressList.md)
+- [AddressValidation](docs/AddressValidation.md)
 - [CarrierList](docs/CarrierList.md)
 - [CarrierSettings](docs/CarrierSettings.md)
 - [Charge](docs/Charge.md)
 - [Commodity](docs/Commodity.md)
+- [CommodityData](docs/CommodityData.md)
 - [Customs](docs/Customs.md)
 - [CustomsData](docs/CustomsData.md)
 - [CustomsList](docs/CustomsList.md)
+- [Duty](docs/Duty.md)
 - [ErrorResponse](docs/ErrorResponse.md)
-- [LabelPrintingRequest](docs/LabelPrintingRequest.md)
 - [Message](docs/Message.md)
 - [Operation](docs/Operation.md)
 - [OperationConfirmation](docs/OperationConfirmation.md)
@@ -66,7 +69,6 @@ const purplship = new Purplship('API_KEY', 'https://instance.purplship.api/v1');
 - [ParcelData](docs/ParcelData.md)
 - [ParcelList](docs/ParcelList.md)
 - [Payment](docs/Payment.md)
-- [PaymentData](docs/PaymentData.md)
 - [Pickup](docs/Pickup.md)
 - [PickupCancelData](docs/PickupCancelData.md)
 - [PickupCancelRequest](docs/PickupCancelRequest.md)
@@ -86,11 +88,19 @@ const purplship = new Purplship('API_KEY', 'https://instance.purplship.api/v1');
 - [ShipmentList](docs/ShipmentList.md)
 - [ShipmentPurchaseData](docs/ShipmentPurchaseData.md)
 - [ShippingRequest](docs/ShippingRequest.md)
+- [TokenObtainPair](docs/TokenObtainPair.md)
+- [TokenPair](docs/TokenPair.md)
+- [TokenRefresh](docs/TokenRefresh.md)
+- [TokenVerify](docs/TokenVerify.md)
 - [TrackerList](docs/TrackerList.md)
 - [TrackingEvent](docs/TrackingEvent.md)
 - [TrackingResponse](docs/TrackingResponse.md)
 - [TrackingStatus](docs/TrackingStatus.md)
+- [Webhook](docs/Webhook.md)
+- [WebhookData](docs/WebhookData.md)
+- [WebhookList](docs/WebhookList.md)
 
 ## Author
 
-PurplShip Team | hello@purplship.com | [purplship.com](https://purplship.com)
+Purplship Team | hello@purplship.com | [purplship.com](https://purplship.com)
+Daniel K| danielk.developer@gmail.com | [danielk.xyz](https://danielk.xyz)

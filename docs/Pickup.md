@@ -1,6 +1,7 @@
-# PurplshipOpenSourceMultiCarrierShippingApi.Pickup
+# PurplshipApi.Pickup
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **String** | A unique pickup identifier | [optional] 
@@ -17,3 +18,5 @@ Name | Type | Description | Notes
 **package_location** | **String** |  The package(s) location.  eg: Behind the entrance door.  | [optional] 
 **options** | **Object** | Advanced carrier specific pickup options | [optional] 
 **test_mode** | **Boolean** | Specified whether it was created with a carrier in test mode | 
+
+
