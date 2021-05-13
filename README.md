@@ -24,7 +24,7 @@ The package needs to be configured with your account's API key, which is availab
 
 ```javascript
 const Purplship = require('purplship');
-const purplship = new Purplship('API_KEY', 'https://instance.purplship.api/v1');
+const purplship = new Purplship('API_KEY', 'https://instance.purplship.api');
 
 purplship.carriers.list()
     .then(carriers => console.log(carriers))
@@ -35,7 +35,7 @@ Or using ES modules and `async`/`await`:
 
 ```javascript
 import Purplship from 'purplship';
-const purplship = new Purplship('API_KEY', 'https://instance.purplship.api/v1');
+const purplship = new Purplship('API_KEY', 'https://instance.purplship.api');
 
 (async () => {
   const carriers = await purplship.carriers.list();
