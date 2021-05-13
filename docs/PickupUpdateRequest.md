@@ -1,6 +1,7 @@
-# PurplshipOpenSourceMultiCarrierShippingApi.PickupUpdateRequest
+# PurplshipApi.PickupUpdateRequest
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **pickup_date** | **String** |  The expected pickup date  Date Format: &#x60;YYYY-MM-DD&#x60;  | 
@@ -12,3 +13,5 @@ Name | Type | Description | Notes
 **instruction** | **String** |  The pickup instruction.  eg: Handle with care.  | [optional] 
 **package_location** | **String** |  The package(s) location.  eg: Behind the entrance door.  | [optional] 
 **options** | **Object** | Advanced carrier specific pickup options | [optional] 
+
+

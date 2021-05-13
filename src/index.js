@@ -30,7 +30,7 @@ const proxyHandler = {
 /**
 * Purplship API.
 * @module purplship/Purplship
-* @version 2021.2
+* @version 2021.4
 */
 class Purplship {
 
@@ -56,8 +56,8 @@ class Purplship {
         this.pickups = new Proxy(new API.PickupsApi(), proxyHandler);
         this.proxy = new Proxy(new API.ProxyApi(), proxyHandler);
         this.shipments = new Proxy(new API.ShipmentsApi(), proxyHandler);
-        this.trackers = new Proxy(new API.TrackersAPI(), proxyHandler);
-        this.utils = new Proxy(new API.UtilsApi(), proxyHandler);
+        this.trackers = new Proxy(new API.TrackersApi(), proxyHandler);
+        this.webhooks = new Proxy(new API.WebhooksApi(), proxyHandler);
     }
 }
 

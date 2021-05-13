@@ -1,10 +1,11 @@
-# PurplshipOpenSourceMultiCarrierShippingApi.Shipment
+# PurplshipApi.Shipment
 
 ## Properties
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **String** | A unique identifier | [optional] 
-**status** | **String** | The current Shipment status | [optional] [default to &#x27;created&#x27;]
+**status** | **String** | The current Shipment status | [optional] [default to &#39;created&#39;]
 **carrier_name** | **String** | The shipment carrier | [optional] 
 **carrier_id** | **String** | The shipment carrier configured identifier | [optional] 
 **label** | **String** | The shipment label in base64 string | [optional] 
@@ -17,7 +18,7 @@ Name | Type | Description | Notes
 **service** | **String** | The selected service | [optional] 
 **shipper** | [**Address**](Address.md) |  | 
 **recipient** | [**Address**](Address.md) |  | 
-**parcels** | [**[Parcel]**](Parcel.md) | The shipment&#x27;s parcels | 
+**parcels** | [**[Parcel]**](Parcel.md) | The shipment&#39;s parcels | 
 **services** | **[String]** |  The carriers services requested for the shipment.  Please consult [the reference](#operation/references) for specific carriers services.&lt;br/&gt; Note that this is a list because on a Multi-carrier rate request you could specify a service per carrier.  | [optional] 
 **options** | **Object** |  The options available for the shipment.&lt;br/&gt; Please consult [the reference](#operation/references) for additional specific carriers options.  | [optional] 
 **payment** | [**Payment**](Payment.md) |  | [optional] 
@@ -30,19 +31,32 @@ Name | Type | Description | Notes
 **test_mode** | **Boolean** | Specified whether it was created with a carrier in test mode | 
 **messages** | [**[Message]**](Message.md) | The list of note or warning messages | [optional] 
 
-<a name="StatusEnum"></a>
+
+
 ## Enum: StatusEnum
 
+
 * `created` (value: `"created"`)
+
 * `purchased` (value: `"purchased"`)
+
 * `shipped` (value: `"shipped"`)
+
 * `transit` (value: `"transit"`)
+
 * `delivered` (value: `"delivered"`)
 
 
-<a name="LabelTypeEnum"></a>
+
+
+
 ## Enum: LabelTypeEnum
 
+
 * `PDF` (value: `"PDF"`)
+
 * `ZPL` (value: `"ZPL"`)
+
+
+
 
