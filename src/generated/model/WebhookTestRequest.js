@@ -12,22 +12,21 @@
  */
 
 import ApiClient from '../ApiClient';
-import CarrierSettings from './CarrierSettings';
 
 /**
- * The CarrierList model module.
- * @module model/CarrierList
+ * The WebhookTestRequest model module.
+ * @module model/WebhookTestRequest
  * @version 2021.6
  */
-class CarrierList {
+class WebhookTestRequest {
     /**
-     * Constructs a new <code>CarrierList</code>.
-     * @alias module:model/CarrierList
-     * @param results {Array.<module:model/CarrierSettings>} 
+     * Constructs a new <code>WebhookTestRequest</code>.
+     * @alias module:model/WebhookTestRequest
+     * @param payload {Object} 
      */
-    constructor(results) { 
+    constructor(payload) { 
         
-        CarrierList.initialize(this, results);
+        WebhookTestRequest.initialize(this, payload);
     }
 
     /**
@@ -35,29 +34,23 @@ class CarrierList {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, results) { 
-        obj['results'] = results;
+    static initialize(obj, payload) { 
+        obj['payload'] = payload;
     }
 
     /**
-     * Constructs a <code>CarrierList</code> from a plain JavaScript object, optionally creating a new instance.
+     * Constructs a <code>WebhookTestRequest</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:model/CarrierList} obj Optional instance to populate.
-     * @return {module:model/CarrierList} The populated <code>CarrierList</code> instance.
+     * @param {module:model/WebhookTestRequest} obj Optional instance to populate.
+     * @return {module:model/WebhookTestRequest} The populated <code>WebhookTestRequest</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
-            obj = obj || new CarrierList();
+            obj = obj || new WebhookTestRequest();
 
-            if (data.hasOwnProperty('next')) {
-                obj['next'] = ApiClient.convertToType(data['next'], 'String');
-            }
-            if (data.hasOwnProperty('previous')) {
-                obj['previous'] = ApiClient.convertToType(data['previous'], 'String');
-            }
-            if (data.hasOwnProperty('results')) {
-                obj['results'] = ApiClient.convertToType(data['results'], [CarrierSettings]);
+            if (data.hasOwnProperty('payload')) {
+                obj['payload'] = ApiClient.convertToType(data['payload'], Object);
             }
         }
         return obj;
@@ -67,24 +60,14 @@ class CarrierList {
 }
 
 /**
- * @member {String} next
+ * @member {Object} payload
  */
-CarrierList.prototype['next'] = undefined;
-
-/**
- * @member {String} previous
- */
-CarrierList.prototype['previous'] = undefined;
-
-/**
- * @member {Array.<module:model/CarrierSettings>} results
- */
-CarrierList.prototype['results'] = undefined;
+WebhookTestRequest.prototype['payload'] = undefined;
 
 
 
 
 
 
-export default CarrierList;
+export default WebhookTestRequest;
 

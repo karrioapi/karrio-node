@@ -30,7 +30,7 @@ const proxyHandler = {
 /**
 * Purplship API.
 * @module purplship/Purplship
-* @version 2021.4
+* @version 2021.6
 */
 class Purplship {
 

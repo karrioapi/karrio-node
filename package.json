@@ -1,11 +1,11 @@
 {
   "name": "purplship",
-  "version": "2021.4.0",
+  "version": "2021.6.0",
   "description": "Multi-carriers Shipping API Node library (Canada Post, DHL, FedEx, UPS, Purolator and more)",
   "main": "purplship/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PurplShip/purplship-node.git"
+    "url": "git+https://github.com/purplship/purplship-node.git"
   },
   "author": "Purplship Team <hello@purplship.com>",
   "license": "MIT",
@@ -31,9 +31,9 @@
     "sinon": "1.17.3"
   },
   "bugs": {
-    "url": "https://github.com/PurplShip/purplship-node/issues"
+    "url": "https://github.com/purplship/purplship-node/issues"
   },
-  "homepage": "https://github.com/PurplShip/purplship-node#readme",
+  "homepage": "https://github.com/purplship/purplship-node#readme",
   "directories": {
     "src": "src"
   },
