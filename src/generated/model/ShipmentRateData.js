@@ -12,22 +12,20 @@
  */
 
 import ApiClient from '../ApiClient';
-import Customs from './Customs';
 
 /**
- * The CustomsList model module.
- * @module model/CustomsList
+ * The ShipmentRateData model module.
+ * @module model/ShipmentRateData
  * @version 2021.7
  */
-class CustomsList {
+class ShipmentRateData {
     /**
-     * Constructs a new <code>CustomsList</code>.
-     * @alias module:model/CustomsList
-     * @param results {Array.<module:model/Customs>} 
+     * Constructs a new <code>ShipmentRateData</code>.
+     * @alias module:model/ShipmentRateData
      */
-    constructor(results) { 
+    constructor() { 
         
-        CustomsList.initialize(this, results);
+        ShipmentRateData.initialize(this);
     }
 
     /**
@@ -35,29 +33,28 @@ class CustomsList {
      * This method is used by the constructors of any subclasses, in order to implement multiple inheritance (mix-ins).
      * Only for internal use.
      */
-    static initialize(obj, results) { 
-        obj['results'] = results;
+    static initialize(obj) { 
     }
 
     /**
-     * Constructs a <code>CustomsList</code> from a plain JavaScript object, optionally creating a new instance.
+     * Constructs a <code>ShipmentRateData</code> from a plain JavaScript object, optionally creating a new instance.
      * Copies all relevant properties from <code>data</code> to <code>obj</code> if supplied or a new instance if not.
      * @param {Object} data The plain JavaScript object bearing properties of interest.
-     * @param {module:model/CustomsList} obj Optional instance to populate.
-     * @return {module:model/CustomsList} The populated <code>CustomsList</code> instance.
+     * @param {module:model/ShipmentRateData} obj Optional instance to populate.
+     * @return {module:model/ShipmentRateData} The populated <code>ShipmentRateData</code> instance.
      */
     static constructFromObject(data, obj) {
         if (data) {
-            obj = obj || new CustomsList();
+            obj = obj || new ShipmentRateData();
 
-            if (data.hasOwnProperty('next')) {
-                obj['next'] = ApiClient.convertToType(data['next'], 'String');
+            if (data.hasOwnProperty('services')) {
+                obj['services'] = ApiClient.convertToType(data['services'], ['String']);
             }
-            if (data.hasOwnProperty('previous')) {
-                obj['previous'] = ApiClient.convertToType(data['previous'], 'String');
+            if (data.hasOwnProperty('carrier_ids')) {
+                obj['carrier_ids'] = ApiClient.convertToType(data['carrier_ids'], ['String']);
             }
-            if (data.hasOwnProperty('results')) {
-                obj['results'] = ApiClient.convertToType(data['results'], [Customs]);
+            if (data.hasOwnProperty('reference')) {
+                obj['reference'] = ApiClient.convertToType(data['reference'], 'String');
             }
         }
         return obj;
@@ -67,24 +64,27 @@ class CustomsList {
 }
 
 /**
- * @member {String} next
+ *  The requested carrier service for the shipment.  Please consult [the reference](#operation/references) for specific carriers services.<br/> Note that this is a list because on a Multi-carrier rate request you could specify a service per carrier. 
+ * @member {Array.<String>} services
  */
-CustomsList.prototype['next'] = undefined;
+ShipmentRateData.prototype['services'] = undefined;
 
 /**
- * @member {String} previous
+ *  The list of configured carriers you wish to get rates from.  *Note that the request will be sent to all carriers in nothing is specified* 
+ * @member {Array.<String>} carrier_ids
  */
-CustomsList.prototype['previous'] = undefined;
+ShipmentRateData.prototype['carrier_ids'] = undefined;
 
 /**
- * @member {Array.<module:model/Customs>} results
+ * The shipment reference
+ * @member {String} reference
  */
-CustomsList.prototype['results'] = undefined;
+ShipmentRateData.prototype['reference'] = undefined;
 
 
 
 
 
 
-export default CustomsList;
+export default ShipmentRateData;
 
