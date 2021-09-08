@@ -87,6 +87,7 @@ const purplship = new Purplship('API_KEY', 'https://instance.purplship.api');
 - [ShipmentData](docs/ShipmentData.md)
 - [ShipmentList](docs/ShipmentList.md)
 - [ShipmentPurchaseData](docs/ShipmentPurchaseData.md)
+- [ShipmentRateData](docs/ShipmentRateData.md)
 - [ShippingRequest](docs/ShippingRequest.md)
 - [TokenObtainPair](docs/TokenObtainPair.md)
 - [TokenPair](docs/TokenPair.md)
@@ -99,6 +100,7 @@ const purplship = new Purplship('API_KEY', 'https://instance.purplship.api');
 - [Webhook](docs/Webhook.md)
 - [WebhookData](docs/WebhookData.md)
 - [WebhookList](docs/WebhookList.md)
+- [WebhookTestRequest](docs/WebhookTestRequest.md)
 
 ## Author
 

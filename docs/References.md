@@ -13,9 +13,12 @@ Name | Type | Description | Notes
 **incoterms** | **Object** |  | 
 **states** | **Object** |  | 
 **services** | **Object** |  | 
+**service_names** | **Object** |  | 
 **options** | **Object** |  | 
+**option_names** | **Object** |  | 
 **package_presets** | **Object** |  | 
 **packaging_types** | **Object** |  | 
 **payment_types** | **Object** |  | 
+**carrier_capabilities** | **Object** |  | 
 
 

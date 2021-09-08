@@ -1,10 +1,9 @@
-# PurplshipApi.TokenRefresh
+# PurplshipApi.WebhookTestRequest
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**refresh** | **String** |  | 
-**access** | **String** |  | [optional] [readonly] 
+**payload** | **Object** |  | 
 
 
