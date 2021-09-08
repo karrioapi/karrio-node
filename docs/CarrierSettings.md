@@ -29,9 +29,13 @@ Name | Type | Description | Notes
 
 * `dicom` (value: `"dicom"`)
 
+* `eshipper` (value: `"eshipper"`)
+
 * `fedex` (value: `"fedex"`)
 
-* `purolator_courier` (value: `"purolator_courier"`)
+* `freightcom` (value: `"freightcom"`)
+
+* `purolator` (value: `"purolator"`)
 
 * `royalmail` (value: `"royalmail"`)
 
@@ -39,17 +43,17 @@ Name | Type | Description | Notes
 
 * `sf_express` (value: `"sf_express"`)
 
+* `tnt` (value: `"tnt"`)
+
 * `ups` (value: `"ups"`)
 
 * `usps` (value: `"usps"`)
 
+* `usps_international` (value: `"usps_international"`)
+
 * `yanwen` (value: `"yanwen"`)
 
 * `yunexpress` (value: `"yunexpress"`)
-
-* `eshipper` (value: `"eshipper"`)
-
-* `freightcom` (value: `"freightcom"`)
 
 
 

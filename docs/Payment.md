@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **paid_by** | **String** | The payor type | [optional] [default to &#39;sender&#39;]
-**currency** | **String** | The payment amount currency | 
+**currency** | **String** | The payment amount currency | [optional] 
 **account_number** | **String** | The payor account number | [optional] 
 
 

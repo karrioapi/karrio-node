@@ -26,9 +26,10 @@ Name | Type | Description | Notes
 **reference** | **String** | The shipment reference | [optional] 
 **label_type** | **String** | The shipment label file type. | [optional] 
 **carrier_ids** | **[String]** |  The list of configured carriers you wish to get rates from.  *Note that the request will be sent to all carriers in nothing is specified*  | [optional] 
-**meta** | **Object** | provider specific metadata | [optional] 
-**created_at** | **String** |  The shipment creation date  Date Format: &#x60;YYYY-MM-DD&#x60;  | 
+**tracker_id** | **String** | The attached tracker id | [optional] 
+**created_at** | **String** |  The shipment creation datetime  Date Format: &#x60;YYYY-MM-DD HH:MM:SS.mmmmmmz&#x60;  | 
 **test_mode** | **Boolean** | Specified whether it was created with a carrier in test mode | 
+**meta** | **Object** | provider specific metadata | [optional] 
 **messages** | [**[Message]**](Message.md) | The list of note or warning messages | [optional] 
 
 
@@ -40,9 +41,11 @@ Name | Type | Description | Notes
 
 * `purchased` (value: `"purchased"`)
 
+* `cancelled` (value: `"cancelled"`)
+
 * `shipped` (value: `"shipped"`)
 
-* `transit` (value: `"transit"`)
+* `in-transit` (value: `"in-transit"`)
 
 * `delivered` (value: `"delivered"`)
 
