@@ -23,8 +23,7 @@ yarn add purplship
 The package needs to be configured with your account's API key, which is available in the Purplship Dashboard.
 
 ```javascript
-const { Purplship } = require('purplship');
-const purplship = Purplship('API_KEY', 'https://instance.purplship.api');
+const purplship = require('purplship')('key_...', 'https://instance.purplship.api');
 
 purplship.carriers.list({})
     .then(carriers => console.log(carriers))
@@ -34,8 +33,8 @@ purplship.carriers.list({})
 Or using ES modules and `async`/`await`:
 
 ```javascript
-import { Purplship } from 'purplship';
-const purplship = Purplship('API_KEY', 'https://instance.purplship.api');
+import Purplship from 'purplship';
+const purplship = Purplship('key_...', 'https://instance.purplship.api');
 
 (async () => {
   const carriers = await purplship.carriers.list({});

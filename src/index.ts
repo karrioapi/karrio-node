@@ -27,7 +27,7 @@ export interface PurplshipClientInterface {
     config: ConfigurationParameters;
 }
 
-export class PurplshipClient implements PurplshipClientInterface {
+export class Client implements PurplshipClientInterface {
     API: APIApi;
     addresses: AddressesApi;
     carriers: CarriersApi;
@@ -60,11 +60,23 @@ export class PurplshipClient implements PurplshipClientInterface {
     }
 }
 
-export function Purplship(apiKey: string, host: string = 'https://cloud.purplship.com', apiKeyPrefix: string = 'Token') {
+export default function Purplship(apiKey: string, host: string = 'https://cloud.purplship.com', apiKeyPrefix: string = 'Token') {
     const clientConfig: ConfigurationParameters = {
         basePath: host,
         apiKey: `${apiKeyPrefix} ${apiKey}`,
     };
 
-    return new PurplshipClient(clientConfig);
+    return new Client(clientConfig);
 }
+
+Purplship.Client = Client;
+
+module.exports = Purplship;
+
+// expose constructor as a named property to enable mocking with Sinon.JS
+module.exports.Purplship = Purplship;
+
+// Allow use with the TypeScript compiler without `esModuleInterop`.
+// We may also want to add `Object.defineProperty(exports, "__esModule", {value: true});` 
+//in the future, so that Babel users will use the `default` version.
+module.exports.default = Purplship;
