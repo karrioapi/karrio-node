@@ -1,34 +1,25 @@
 {
   "name": "purplship",
-  "version": "2021.7.0",
+  "version": "2021.10.0",
   "description": "Multi-carriers Shipping API Node library (Canada Post, DHL, FedEx, UPS, Purolator and more)",
-  "main": "purplship/index.js",
+  "main": "./purplship/index.js",
+  "typings": "./purplship/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/purplship/purplship-node.git"
   },
-  "author": "Purplship Team <hello@purplship.com>",
-  "license": "MIT",
+  "author": "Team Purplship <hello@purplship.com>",
+  "license": "Apache-2.0",
   "scripts": {
-    "test": "mocha --compilers js:babel-core/register --recursive",
-    "build": "babel src -d purplship"
-  },
-  "browser": {
-    "fs": false
+    "build": "tsc",
+    "prepare": "npm run build"
   },
   "dependencies": {
-    "superagent": "3.7.0"
+    "node-fetch": "^2.6.1"
   },
   "devDependencies": {
-    "babel": "^6.23.0",
-    "babel-cli": "^6.26.0",
-    "babel-core": "6.26.0",
-    "babel-plugin-transform-builtin-extend": "^1.1.2",
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-stage-0": "^6.24.1",
-    "expect.js": "~0.3.1",
-    "mocha": "~2.3.4",
-    "sinon": "1.17.3"
+    "@types/node": "^16.11.7",
+    "typescript": "^3.9.5"
   },
   "bugs": {
     "url": "https://github.com/purplship/purplship-node/issues"
