@@ -2,7 +2,7 @@
 
 Purplship is a Multi-carrier Shipping API that simplifies the integration of logistic carrier services.
 
-Visit [nex.purplship.com](https://next.purplship.com) to deploy your private cloud multi-carrier shipping API.
+Visit [next.purplship.com](https://next.purplship.com) to deploy your private cloud multi-carrier shipping API.
 
 ## Documentation
 
