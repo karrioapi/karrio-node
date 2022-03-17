@@ -2,6 +2,7 @@ import { AddressesApi } from './generated/apis/AddressesApi';
 import { APIApi } from './generated/apis/APIApi';
 import { CarriersApi } from './generated/apis/CarriersApi';
 import { CustomsApi } from './generated/apis/CustomsApi';
+import { OrdersApi } from './generated/apis/OrdersApi';
 import { ParcelsApi } from './generated/apis/ParcelsApi';
 import { PickupsApi } from './generated/apis/PickupsApi';
 import { ProxyApi } from './generated/apis/ProxyApi';
@@ -13,7 +14,7 @@ import { Configuration, ConfigurationParameters } from './generated/runtime';
 export * from './generated/runtime';
 export * from './generated/models';
 
-export interface PurplshipClientInterface {
+export interface KarrioClientInterface {
     API: APIApi;
     addresses: AddressesApi;
     carriers: CarriersApi;
@@ -27,7 +28,7 @@ export interface PurplshipClientInterface {
     config: ConfigurationParameters;
 }
 
-export class Client implements PurplshipClientInterface {
+export class Client implements KarrioClientInterface {
     API: APIApi;
     addresses: AddressesApi;
     carriers: CarriersApi;
@@ -35,6 +36,7 @@ export class Client implements PurplshipClientInterface {
     parcels: ParcelsApi;
     pickups: PickupsApi;
     proxy: ProxyApi;
+    orders: OrdersApi;
     shipments: ShipmentsApi;
     trackers: TrackersApi;
     webhooks: WebhooksApi;
@@ -60,7 +62,7 @@ export class Client implements PurplshipClientInterface {
     }
 }
 
-export default function Purplship(apiKey: string, host: string = 'https://cloud.purplship.com', apiKeyPrefix: string = 'Token') {
+export default function Karrio(apiKey: string, host: string = 'https://api.karrio.io', apiKeyPrefix: string = 'Token') {
     const clientConfig: ConfigurationParameters = {
         basePath: host,
         apiKey: `${apiKeyPrefix} ${apiKey}`,
@@ -69,14 +71,14 @@ export default function Purplship(apiKey: string, host: string = 'https://cloud.
     return new Client(clientConfig);
 }
 
-Purplship.Client = Client;
+Karrio.Client = Client;
 
-module.exports = Purplship;
+module.exports = Karrio;
 
 // expose constructor as a named property to enable mocking with Sinon.JS
-module.exports.Purplship = Purplship;
+module.exports.Karrio = Karrio;
 
 // Allow use with the TypeScript compiler without `esModuleInterop`.
 // We may also want to add `Object.defineProperty(exports, "__esModule", {value: true});` 
 //in the future, so that Babel users will use the `default` version.
-module.exports.default = Purplship;
+module.exports.default = Karrio;

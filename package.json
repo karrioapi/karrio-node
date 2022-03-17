@@ -1,18 +1,18 @@
 {
-  "name": "purplship",
-  "version": "2021.11.0",
+  "name": "karrio",
+  "version": "2022.3.0",
   "description": "Multi-carriers Shipping API Node library (Canada Post, DHL, FedEx, UPS, Purolator and more)",
-  "main": "./purplship/index.js",
-  "typings": "./purplship/index.d.ts",
+  "main": "./karrio/index.js",
+  "typings": "./karrio/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/purplship/purplship-node.git"
+    "url": "git+https://github.com/karrioapi/karrio-node.git"
   },
-  "author": "Team Purplship <hello@purplship.com>",
+  "author": "Team Purplship <hello@karrio.com>",
   "license": "Apache-2.0",
   "scripts": {
     "build": "tsc",
-    "prepare": "rm -rf purplship; npm run build"
+    "prepare": "rm -rf karrio; npm run build"
   },
   "dependencies": {
     "node-fetch": "^2.6.1"
@@ -22,9 +22,9 @@
     "typescript": "^3.9.5"
   },
   "bugs": {
-    "url": "https://github.com/purplship/purplship-node/issues"
+    "url": "https://github.com/karrioapi/karrio-node/issues"
   },
-  "homepage": "https://github.com/purplship/purplship-node#readme",
+  "homepage": "https://github.com/karrioapi/karrio-node#readme",
   "directories": {
     "src": "src"
   },

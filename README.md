@@ -1,31 +1,31 @@
-# Purplship Node.js Library
+# Karrio Node/JS/TS Library
 
-Purplship is a Multi-carrier Shipping API that simplifies the integration of logistic carrier services.
+Karrio is a universal Shipping API that simplifies the integration of logistic carrier services.
 
-Visit [next.purplship.com](https://next.purplship.com) to deploy your private cloud multi-carrier shipping API.
+Visit [karrio.io](https://karrio.io) to deploy your private cloud multi-carrier shipping API.
 
 ## Documentation
 
-See the full [Node API docs](https://next.purplship.com/docs/reference).
+See the full [Node API docs](https://docs.karrio.io/reference).
 
 ## Installation
 
 Install using [npm](https://www.npmjs.com/package/npm) or [yarn](https://yarnpkg.com/)
 
 ```bash
-npm i purplship
+npm i karrio
 # or 
-yarn add purplship
+yarn add karrio
 ```
 
 ## Usage
 
-The package needs to be configured with your account's API key, which is available in the Purplship Dashboard.
+The package needs to be configured with your account's API key, which is available in the Karrio Dashboard.
 
 ```javascript
-const purplship = require('purplship')('key_...', 'https://instance.purplship.api');
+const karrio = require('karrio')('key_...', 'https://api.karrio.io');
 
-purplship.carriers.list({})
+karrio.carriers.list({})
     .then(carriers => console.log(carriers))
     .catch(error => console.error(error));
 ```
@@ -33,11 +33,11 @@ purplship.carriers.list({})
 Or using ES modules and `async`/`await`:
 
 ```javascript
-import Purplship from 'purplship';
-const purplship = Purplship('key_...', 'https://instance.purplship.api');
+import Karrio from 'karrio';
+const karrio = Karrio('key_...', 'https://api.karrio.io');
 
 (async () => {
-  const carriers = await purplship.carriers.list({});
+  const carriers = await karrio.carriers.list({});
 
   console.log(carriers);
 })();
@@ -45,5 +45,4 @@ const purplship = Purplship('key_...', 'https://instance.purplship.api');
 
 ## Author
 
-Team purplship | hello@purplship.com | [purplship.com](https://purplship.com)
-Daniel K | danielk.developer@gmail.com | [danielk.xyz](https://danielk.xyz)
+Team Karrio | hello@karrio.io | [karrio.io](https://karrio.io)
