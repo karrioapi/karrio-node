@@ -1,6 +1,6 @@
 {
   "name": "karrio",
-  "version": "2022.3.0",
+  "version": "2022.3.1",
   "description": "Multi-carriers Shipping API Node library (Canada Post, DHL, FedEx, UPS, Purolator and more)",
   "main": "./karrio/index.js",
   "typings": "./karrio/index.d.ts",
@@ -8,7 +8,7 @@
     "type": "git",
     "url": "git+https://github.com/karrioapi/karrio-node.git"
   },
-  "author": "Team Purplship <hello@karrio.com>",
+  "author": "Team Purplship <hello@karrio.io>",
   "license": "Apache-2.0",
   "scripts": {
     "build": "tsc",

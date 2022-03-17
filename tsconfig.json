@@ -4,7 +4,7 @@
     "target": "es5",
     "module": "commonjs",
     "moduleResolution": "node",
-    "outDir": "purplship",
+    "outDir": "karrio",
     "lib": [
       "es6",
       "dom"
@@ -15,7 +15,7 @@
   },
   "exclude": [
     "codegen",
-    "purplship",
+    "karrio",
     "node_modules"
   ]
 }
