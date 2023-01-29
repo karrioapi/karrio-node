@@ -2,13 +2,15 @@ import { AddressesApi } from './generated/apis/AddressesApi';
 import { APIApi } from './generated/apis/APIApi';
 import { CarriersApi } from './generated/apis/CarriersApi';
 import { CustomsApi } from './generated/apis/CustomsApi';
-import { OrdersApi } from './generated/apis/OrdersApi';
 import { ParcelsApi } from './generated/apis/ParcelsApi';
 import { PickupsApi } from './generated/apis/PickupsApi';
 import { ProxyApi } from './generated/apis/ProxyApi';
 import { ShipmentsApi } from './generated/apis/ShipmentsApi';
 import { TrackersApi } from './generated/apis/TrackersApi';
 import { WebhooksApi } from './generated/apis/WebhooksApi';
+import { OrdersApi } from './generated/apis/OrdersApi';
+import { BatchesApi } from './generated/apis/BatchesApi';
+import { DocumentsApi } from './generated/apis/DocumentsApi';
 import { Configuration, ConfigurationParameters } from './generated/runtime';
 
 export * from './generated/runtime';
@@ -25,6 +27,9 @@ export interface KarrioClientInterface {
     shipments: ShipmentsApi;
     trackers: TrackersApi;
     webhooks: WebhooksApi;
+    orders: OrdersApi;
+    batches: BatchesApi;
+    documents: DocumentsApi;
     config: ConfigurationParameters;
 }
 
@@ -40,12 +45,19 @@ export class Client implements KarrioClientInterface {
     shipments: ShipmentsApi;
     trackers: TrackersApi;
     webhooks: WebhooksApi;
+    batches: BatchesApi;
+    documents: DocumentsApi;
     config: ConfigurationParameters;
 
     constructor(clientConfig: ConfigurationParameters) {
         const config = new Configuration({
-            ...(typeof window !== 'undefined' ? {} : { fetchApi: require('node-fetch') }),
+            credentials: "include",
+            headers: {
+                "Accept": "application/json",
+                "Content-Type": "application/json",
+            },
             ...clientConfig,
+            ...(typeof window !== 'undefined' ? {} : { fetchApi: require('node-fetch') }),
         });
 
         this.config = clientConfig;
@@ -59,6 +71,9 @@ export class Client implements KarrioClientInterface {
         this.shipments = new ShipmentsApi(config);
         this.trackers = new TrackersApi(config);
         this.webhooks = new WebhooksApi(config);
+        this.orders = new OrdersApi(config);
+        this.batches = new BatchesApi(config);
+        this.documents = new DocumentsApi(config);
     }
 }
 

@@ -4,12 +4,12 @@ if [[ "$*" == *shell* ]]; then
 elif [[ "$*" == *gen:cli* ]]; then
 	rm -rf ./src/generated || true
 	docker run --rm -v ${PWD}:/local openapitools/openapi-generator-cli generate \
-		-i https://raw.githubusercontent.com/karrioapi/karrio/main/server/schemas/openapi.json \
+		-i https://raw.githubusercontent.com/karrioapi/karrio/main/server/schemas/openapi.yml \
         -g typescript-fetch \
 		-o /local/src/generated \
         --additional-properties=typescriptThreePlus=true \
         --additional-properties=modelPropertyNaming=snake_case \
-        --additional-properties=useSingleRequestParameter=True
+        --additional-properties=useSingleRequestParameter=true
 
     rm -rf ./src/generated/index.ts || true
     rm -rf ./src/generated/apis/index.ts || true

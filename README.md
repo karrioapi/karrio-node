@@ -25,7 +25,7 @@ The package needs to be configured with your account's API key, which is availab
 ```javascript
 const karrio = require('karrio')('key_...', 'https://api.karrio.io');
 
-karrio.carriers.list({})
+karrio.carriers.list()
     .then(carriers => console.log(carriers))
     .catch(error => console.error(error));
 ```
@@ -37,7 +37,7 @@ import Karrio from 'karrio';
 const karrio = Karrio('key_...', 'https://api.karrio.io');
 
 (async () => {
-  const carriers = await karrio.carriers.list({});
+  const carriers = await karrio.carriers.list();
 
   console.log(carriers);
 })();
