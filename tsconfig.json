@@ -6,8 +6,9 @@
     "moduleResolution": "node",
     "outDir": "karrio",
     "lib": [
-      "es6",
-      "dom"
+      "es2016",
+      "dom",
+      "es5"
     ],
     "typeRoots": [
       "node_modules/@types"
