@@ -1,3 +1,6 @@
+__This repository has been archived but the karrio docs have been moved to a monorepo https://github.com/karrioapi/karrio__ 
+
+
 # Karrio Node/JS/TS Library
 
 Karrio is a universal Shipping API that simplifies the integration of logistic carrier services.
